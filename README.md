@@ -1,78 +1,83 @@
 🚗 Parking Space Prediction using Machine Learning
 📖 Project Overview
 
-This project aims to build a Smart Parking Prediction System that forecasts the availability of parking spaces using machine learning techniques.
-Instead of relying on physical IoT sensors, the system uses historical and time-based data to predict whether parking bays are likely to be free or occupied during specific hours and days.
-This approach supports smart city initiatives by optimizing parking management and reducing congestion.
+This project focuses on predicting parking space availability using Machine Learning techniques.
+Instead of using physical IoT sensors, the model relies on historical and time-based data to forecast whether a parking bay will be free or occupied.
+It contributes to smart city solutions by reducing traffic congestion and improving parking efficiency.
 
 🎯 Objectives
 
-Predict parking space availability based on time, day, and historical usage patterns.
+Predict parking space availability based on time, day, and historical trends.
 
-Reduce traffic congestion caused by drivers searching for parking.
+Utilize machine learning models for data-driven parking management.
 
-Create a data-driven model that can later integrate with IoT systems or dashboards.
+Provide a foundation for integration with real-time IoT or API data in the future.
 
 🧠 Concept
 
-The model uses supervised learning (classification) to learn patterns of parking occupancy.
-It considers temporal features like:
+The system applies a supervised classification model (Random Forest) to analyze and predict occupancy.
+It uses features like:
 
 Hour of the day
 
 Day of the week
 
-Month of the year
+Month
 
-The target variable is Occupancy (0 = Free, 1 = Occupied), which was simulated based on realistic peak-hour trends.
+The target variable (Occupancy) is simulated as binary:
+
+0 → Free
+
+1 → Occupied
 
 ⚙️ Tech Stack
 Category	Tools / Libraries
 Programming Language	Python
-Libraries	Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+Data Handling	Pandas, NumPy
 Visualization	Matplotlib, Seaborn
+Machine Learning	Scikit-learn
 Environment	Jupyter Notebook
 📊 Workflow
 
-Data Loading: Import and inspect the parking dataset (Parking_Bay Sensors.csv).
+Data Loading – Import and inspect dataset (Dataset.csv).
 
-Feature Engineering: Create datetime-based features (hour, day, month).
+Feature Engineering – Create datetime features like hour, day, and month.
 
-Data Simulation: Generate a realistic occupancy column.
+Data Simulation – Generate realistic occupancy labels.
 
-Model Training: Use Random Forest Classifier to predict parking availability.
+Model Training – Train Random Forest Classifier for prediction.
 
-Evaluation: Measure model accuracy, visualize confusion matrix and feature importance.
+Model Evaluation – Measure accuracy and visualize confusion matrix.
 
-Visualization: Explore trends like occupancy by hour/day and correlations.
+Visualization – Explore occupancy patterns and correlations.
 
 📈 Visual Insights
 
-Occupancy Distribution: Shows ratio of free vs occupied spaces.
+Occupancy Distribution: Ratio of free vs. occupied slots.
 
-Hourly Trends: Parking tends to be more occupied during office hours (8 AM – 6 PM).
+Hourly Patterns: Higher occupancy during 8 AM – 6 PM.
 
-Feature Importance: Hour and day are the most influential predictors.
+Feature Importance: Time-related features highly impact results.
 
-Confusion Matrix: Highlights how well the model distinguishes free vs occupied states.
+Confusion Matrix: Shows classification accuracy between predicted and actual values.
 
 🔍 Results
 
-Achieved accurate prediction of occupancy trends based on time features.
+Successfully predicted parking space availability using time-based patterns.
 
-Demonstrated potential for AI-based parking management without IoT sensors.
+Provided data-driven insights for efficient parking management.
 
-Can be extended using real parking or weather data for better performance.
+Established a foundation for smart parking systems without IoT dependency.
 
 🚀 Future Scope
 
-Integrate real-time data via APIs or IoT sensors.
+Integrate with real-time parking or weather data APIs.
 
-Deploy as a web dashboard using Streamlit or Flask.
+Extend model using LSTM or XGBoost for time-series forecasting.
 
-Extend to time-series forecasting (LSTM/XGBoost) for advanced prediction.
+Deploy interactive web dashboard using Streamlit or Flask.
 
 💡 Conclusion
 
-The Parking Space Prediction system showcases how data science and machine learning can contribute to smart city solutions.
-By leveraging data-driven insights, it provides an efficient and scalable approach to manage urban parking without requiring physical sensor infrastructure.
+This project demonstrates how machine learning can enhance urban parking management without requiring physical sensors.
+By analyzing time-based data, it offers a smart, scalable, and sustainable approach for future city infrastructure.
