@@ -26,4 +26,12 @@
 > ### 🧠 **Future Scope**  
 > - Integration with **real-time sensor or GPS data**  
 > - Deployment as a **web or mobile application** for live updates  
-> - Extension using **deep learning** for improved accuracy and dynamic predictions  
+> - Extension using **deep learning** for improved accuracy and dynamic predictions
+
+## 📂 Dataset Source
+
+> - The dataset used for this project is **“On-street Car Parking Sensor Data – 2018”**, published by the City of Melbourne, Victoria.  
+> - 🔗 [Download Link](https://discover.data.vic.gov.au/dataset/on-street-car-parking-sensor-data-2018)  
+> - It includes in-ground parking bay sensor data recording arrival and departure events, bay restrictions, and vehicle presence.  
+> - (Source: [discover.data.vic.gov.au](https://discover.data.vic.gov.au/dataset/on-street-car-parking-sensor-data-2018))
+
